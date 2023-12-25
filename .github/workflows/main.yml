@@ -16,4 +16,4 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pa
         FOLDER: build
-        BUILD_SCRIPT: pnpm install && pnpm run build
+        BUILD_SCRIPT: tsc && vite build
